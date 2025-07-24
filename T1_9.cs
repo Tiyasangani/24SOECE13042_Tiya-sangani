@@ -10,27 +10,28 @@ namespace _24SOECE13042_Tiya_sangani
     {
         static void Main(string[]args)
         {
-            Console.WriteLine("Enter your name:");
-            string input = Console.ReadLine();
-            string toggleCase = "";
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
 
-            foreach (char c in input)
+            string result = "";
+
+            foreach (char c in name)
             {
                 if (char.IsUpper(c))
                 {
-                    toggleCase += char.ToLower(c); 
+                    result += char.ToLower(c);
                 }
                 else if (char.IsLower(c))
                 {
-                    toggleCase += char.ToUpper(c); 
+                    result += char.ToUpper(c);
                 }
                 else
                 {
-                    toggleCase += c; 
+                    result += c;
                 }
             }
 
-            Console.WriteLine("OUTPUT: " + toggleCase);
+            Console.WriteLine("OUTPUT: " + result);
         }
     }
 }

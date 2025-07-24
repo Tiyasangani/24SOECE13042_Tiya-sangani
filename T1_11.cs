@@ -10,12 +10,11 @@ namespace _24SOECE13042_Tiya_sangani
     {
         static void Main(string[]args)
         {
-            // Accept name
             Console.Write("Enter Name: ");
             string name = Console.ReadLine();
 
             Console.Write("Enter Gender (M/F): ");
-            char gender = char.ToUpper(Convert.ToChar(Console.ReadLine()));
+            char gender = Convert.ToChar(Console.ReadLine().ToUpper());
 
             if (gender == 'M')
             {
@@ -27,7 +26,7 @@ namespace _24SOECE13042_Tiya_sangani
             }
             else
             {
-                Console.WriteLine("Invalid gender entered. Please enter M or F.");
+                Console.WriteLine("enter M for Male or F for Female.");
             }
         }
     }

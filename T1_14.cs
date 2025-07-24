@@ -8,30 +8,30 @@ namespace _24SOECE13042_Tiya_sangani
 {
     internal class T1_14
     {
-        static void Main(string[]args)
+        static void Main(string[] args)
         {
             Console.Write("Enter a number: ");
-            string input = Console.ReadLine();
+            string number = Console.ReadLine();
 
-            string[] words = { "Zero", "One", "Two", "Three", "Four", "Five",
-                           "Six", "Seven", "Eight", "Nine" };
+            string[] words = { "Zero", "One", "Two", "Three", "Four",
+                           "Five", "Six", "Seven", "Eight", "Nine" };
 
             Console.Write("Output: ");
-            foreach (char digit in input)
+
+            foreach (char c in number)
             {
-                if (char.IsDigit(digit))
+                if (c >= '0' && c <= '9')
                 {
-                    int index = digit - '0'; 
-                    Console.Write(words[index] + " ");
+                    int digit = c - '0';
+                    Console.Write(words[digit] + " ");
                 }
                 else
                 {
-                    Console.WriteLine("\nInvalid input. Please enter digits only.");
+                    Console.WriteLine("\nPlease enter digits only.");
                     return;
                 }
             }
-
-            Console.WriteLine(); 
         }
+
     }
 }

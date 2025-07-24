@@ -10,28 +10,30 @@ namespace _24SOECE13042_Tiya_sangani
     {
         static void Main(string[]args)
         {
-            Console.Write("Input the number of terms: ");
-            int n = Convert.ToInt32(Console.ReadLine());
+            Console.Write("How many terms? ");
+            int count = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Input number: ");
+            Console.Write("Enter a digit: ");
             int digit = Convert.ToInt32(Console.ReadLine());
 
             int term = 0;
-            int sum = 0;
+            int total = 0;
 
             Console.Write("Series: ");
 
-            for (int i = 1; i <= n; i++)
+            for (int i = 1; i <= count; i++)
             {
                 term = term * 10 + digit;
-                sum += term;
+
+                total = total + term;
 
                 Console.Write(term);
-                if (i < n)
+
+                if (i < count)
                     Console.Write(" + ");
             }
 
-            Console.WriteLine("\nThe Sum is : " + sum);
+            Console.WriteLine("\nSum = " + total);
         }
     }
 }

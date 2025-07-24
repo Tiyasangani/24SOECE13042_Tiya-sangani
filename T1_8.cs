@@ -10,7 +10,7 @@ namespace _24SOECE13042_Tiya_sangani
     {
         static void Main(string[]args)
         {
-            Console.WriteLine("Enter your name:");
+            Console.Write("Enter your name: ");
             string name = Console.ReadLine();
 
             string upperName = name.ToUpper();

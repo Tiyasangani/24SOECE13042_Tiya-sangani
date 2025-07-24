@@ -11,15 +11,15 @@ namespace _24SOECE13042_Tiya_sangani
         static void Main(string[]args)
         {
             Console.Write("Enter a number: ");
-            int number = int.Parse(Console.ReadLine());
+            int num = Convert.ToInt32(Console.ReadLine());
 
-            if (number % 2 == 0)
+            if (num % 2 == 0)
             {
-                Console.WriteLine($"{number} is even.");
+                Console.WriteLine(num + " is odd");
             }
             else
             {
-                Console.WriteLine($"{number} is odd.");
+                Console.WriteLine(num + " is even");
             }
         }
     }

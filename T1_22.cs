@@ -24,7 +24,7 @@ namespace _24SOECE13042_Tiya_sangani
                     Console.Write("*");
                 }
 
-                Console.WriteLine();
+                Console.WriteLine(); // Move to next line
             }
 
             for (int i = n - 1; i >= 1; i--)
@@ -39,7 +39,7 @@ namespace _24SOECE13042_Tiya_sangani
                     Console.Write("*");
                 }
 
-                Console.WriteLine();
+                Console.WriteLine(); 
             }
         }
     }

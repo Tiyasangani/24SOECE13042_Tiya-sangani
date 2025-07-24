@@ -16,7 +16,7 @@ namespace _24SOECE13042_Tiya_sangani
             Console.WriteLine("Pincode: 360020\n");
             Console.WriteLine("State: Gujarat\n");
             Console.WriteLine("Country: India\n");
-            Console.WriteLine("Email:tiyasangani2021@gmail.com\n");
+            Console.WriteLine("Email:tiyasangani@gmail.com\n");
         }
     }
 }

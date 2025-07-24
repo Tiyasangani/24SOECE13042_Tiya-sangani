@@ -11,26 +11,27 @@ namespace _24SOECE13042_Tiya_sangani
         static void Main(string[]args)
         {
             Console.Write("Enter a number: ");
-            int num = int.Parse(Console.ReadLine());
+            int num = Convert.ToInt32(Console.ReadLine());
 
-            int originalNum = num;
+            int original = num; 
             int sum = 0;
-            int digits = num.ToString().Length;
+
+            int digits = num.ToString().Length; 
 
             while (num > 0)
             {
-                int digit = num % 10;
-                sum += (int)Math.Pow(digit, digits);
-                num /= 10;
+                int digit = num % 10; 
+                sum = sum + (int)Math.Pow(digit, digits);
+                num = num / 10;
             }
 
-            if (sum == originalNum)
+            if (sum == original)
             {
-                Console.WriteLine(originalNum + " is an Armstrong number.");
+                Console.WriteLine(original + " is an Armstrong number.");
             }
             else
             {
-                Console.WriteLine(originalNum + " is not an Armstrong number.");
+                Console.WriteLine(original + " is not an Armstrong number.");
             }
         }
     }
